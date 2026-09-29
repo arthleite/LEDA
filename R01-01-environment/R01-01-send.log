@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-09-25T11:10:32.055-0300</date>
+  <logger>ARTHUR EVANGELISTA LEITE</logger>
+  <level>FINE</level>
+  <message>File 20250017110-ARTHUR EVANGELISTA LEITE.zip was received. It was sent by ARTHUR EVANGELISTA LEITE from IP 150.165.74.104 at 25-09-2026 11*10*32</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-09-25T11:19:59.136-0300</date>
+  <logger>ARTHUR EVANGELISTA LEITE</logger>
+  <level>FINE</level>
+  <message>File 20250017110-ARTHUR EVANGELISTA LEITE.zip was received. It was sent by ARTHUR EVANGELISTA LEITE from IP 150.165.74.104 at 25-09-2026 11*19*59</message>
+</record>

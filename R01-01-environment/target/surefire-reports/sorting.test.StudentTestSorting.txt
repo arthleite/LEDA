@@ -1,26 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: sorting.test.StudentTestSorting
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.223 s <<< FAILURE! -- in sorting.test.StudentTestSorting
-sorting.test.StudentTestSorting.testSort01 -- Time elapsed: 0.108 s <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.274 s <<< FAILURE! -- in sorting.test.StudentTestSorting
+sorting.test.StudentTestSorting.testSort01 -- Time elapsed: 0.134 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Implementation not provided
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:142)
 	at sorting.test.StudentTestSorting.getImplementation(StudentTestSorting.java:44)
 	at sorting.test.StudentTestSorting.setUp(StudentTestSorting.java:32)
 
-sorting.test.StudentTestSorting.testSort02 -- Time elapsed: 0.017 s <<< FAILURE!
+sorting.test.StudentTestSorting.testSort02 -- Time elapsed: 0.023 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Implementation not provided
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:142)
 	at sorting.test.StudentTestSorting.getImplementation(StudentTestSorting.java:44)
 	at sorting.test.StudentTestSorting.setUp(StudentTestSorting.java:32)
 
-sorting.test.StudentTestSorting.testSort03 -- Time elapsed: 0.005 s <<< FAILURE!
+sorting.test.StudentTestSorting.testSort03 -- Time elapsed: 0.007 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Implementation not provided
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:142)
 	at sorting.test.StudentTestSorting.getImplementation(StudentTestSorting.java:44)
 	at sorting.test.StudentTestSorting.setUp(StudentTestSorting.java:32)
 
-sorting.test.StudentTestSorting.testSort04 -- Time elapsed: 0.006 s <<< FAILURE!
+sorting.test.StudentTestSorting.testSort04 -- Time elapsed: 0.007 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Implementation not provided
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:142)
 	at sorting.test.StudentTestSorting.getImplementation(StudentTestSorting.java:44)

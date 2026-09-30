@@ -9,12 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import sorting.AbstractSorting;
-import sorting.simpleSorting.BubbleSort;
-import sorting.simpleSorting.InsertionSort;
-import sorting.simpleSorting.SelectionSort;
-import sorting.variationsOfBubblesort.BidirectionalBubbleSort;
-import sorting.variationsOfBubblesort.RecursiveBubbleSort;
-import sorting.variationsOfSelectionsort.RecursiveSelectionSort;
 
 public class StudentTestSorting {
 
@@ -46,7 +40,8 @@ public class StudentTestSorting {
 	private void getImplementation() {
 		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
 		// null
-		this.implementation = new RecursiveSelectionSort<>();
+		this.implementation = null;
+		fail("Implementation not provided");
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {

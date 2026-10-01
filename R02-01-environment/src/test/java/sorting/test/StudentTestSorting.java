@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import sorting.AbstractSorting;
 import sorting.divideAndConquer.MergeSort;
 import sorting.divideAndConquer.QuickSort;
+import sorting.divideAndConquer.quicksort3.QuickSortMedianOfThree;
 
 public class StudentTestSorting {
 
@@ -42,7 +43,7 @@ public class StudentTestSorting {
 	private void getImplementation() {
 		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
 		// null
-		this.implementation = new QuickSort<>();
+		this.implementation = new QuickSortMedianOfThree<>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {

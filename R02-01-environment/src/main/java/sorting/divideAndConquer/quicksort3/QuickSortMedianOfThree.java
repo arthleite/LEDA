@@ -1,6 +1,7 @@
 package sorting.divideAndConquer.quicksort3;
 
 import sorting.AbstractSorting;
+import util.Util;
 
 /**
  * A classe QuickSortMedianOfThree representa uma variação do QuickSort que
@@ -20,7 +21,51 @@ public class QuickSortMedianOfThree<T extends Comparable<T>> extends
 		AbstractSorting<T> {
 
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (leftIndex >= 0 && rightIndex < array.length && leftIndex < rightIndex) {
+            if (rightIndex - leftIndex < 3) {
+                medianOfThree(array, leftIndex, rightIndex);
+            } else {
+                int p = partition(array, leftIndex, rightIndex);
+                sort(array, leftIndex, p - 1);
+                sort(array, p + 1, rightIndex);
+            }
+        }
 	}
+
+	private int partition(T[] array, int leftIndex, int rightIndex){
+		int pivoIndex = medianOfThree(array, leftIndex, rightIndex);
+        T pivo = array[pivoIndex];
+
+        // coloca o pivô em A[right-1]
+        Util.swap(array, pivoIndex, rightIndex - 1);
+
+        int i = leftIndex;
+        int j = rightIndex - 1;
+
+        while (i < j) {
+            while (array[++i].compareTo(pivo) < 0) { }
+            while (array[--j].compareTo(pivo) > 0) { }
+            if (i < j) {
+                Util.swap(array, i, j);
+            }
+        }
+        // devolve o pivô para a posição final
+        Util.swap(array, i, rightIndex - 1);
+        return i;
+	}
+
+	private int medianOfThree(T[] array, int leftIndex, int rightIndex) {
+        int mid = leftIndex + (rightIndex - leftIndex) / 2;
+
+        if (array[mid].compareTo(array[leftIndex]) < 0) {
+            Util.swap(array, leftIndex, mid);
+        }
+        if (array[rightIndex].compareTo(array[leftIndex]) < 0) {
+            Util.swap(array, leftIndex, rightIndex);
+        }
+        if (array[rightIndex].compareTo(array[mid]) < 0) {
+            Util.swap(array, mid, rightIndex);
+        }
+        return mid;
+    }
 }

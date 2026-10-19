@@ -46,7 +46,7 @@ public class StudentTestSorting {
 	private void getImplementation() {
 		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
 		// null
-		this.implementation = new RecursiveSelectionSort<>();
+		this.implementation = new BubbleSort<>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {

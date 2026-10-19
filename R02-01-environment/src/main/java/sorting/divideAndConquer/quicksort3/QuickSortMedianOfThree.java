@@ -24,19 +24,17 @@ public class QuickSortMedianOfThree<T extends Comparable<T>> extends
 		if (leftIndex >= 0 && rightIndex < array.length && leftIndex < rightIndex) {
             if (rightIndex - leftIndex < 3) {
                 medianOfThree(array, leftIndex, rightIndex);
-            } else {
+            } else {// vai tratar os trechos com mais de 4 elementos
                 int p = partition(array, leftIndex, rightIndex);
-                sort(array, leftIndex, p - 1);
-                sort(array, p + 1, rightIndex);
+                sort(array, leftIndex, p - 1); // parte a esquerda
+                sort(array, p + 1, rightIndex); // parte a direita
             }
         }
 	}
 
-	private int partition(T[] array, int leftIndex, int rightIndex){
+	private int partition(T[] array, int leftIndex, int rightIndex){ // ordena left, right e mid e devolve o indice do centro, que no final guarda a mediana
 		int pivoIndex = medianOfThree(array, leftIndex, rightIndex);
         T pivo = array[pivoIndex];
-
-        // coloca o pivô em A[right-1]
         Util.swap(array, pivoIndex, rightIndex - 1);
 
         int i = leftIndex;
@@ -53,7 +51,7 @@ public class QuickSortMedianOfThree<T extends Comparable<T>> extends
         Util.swap(array, i, rightIndex - 1);
         return i;
 	}
-
+    // ordena os arrays com 2 ou 3 elementos
 	private int medianOfThree(T[] array, int leftIndex, int rightIndex) {
         int mid = leftIndex + (rightIndex - leftIndex) / 2;
 
